@@ -1,0 +1,3 @@
+[submodule "serral.github.io"]
+    path = serral.github.io
+    url = https://github.com/serral/serral-github-io.git
