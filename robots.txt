@@ -1,4 +1,22 @@
+# Robots.txt for serral.github.io
+# Crawl directives for all search engines
 User-agent: *
 Allow: /
+Disallow: /.git
+Disallow: /_site/
+Disallow: /.jekyll-cache/
+Disallow: /.sass-cache/
 
+# Crawl delay (seconds) - Optional, adjust if needed
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://serral.github.io/sitemap.xml
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /

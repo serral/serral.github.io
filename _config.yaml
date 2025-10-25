@@ -18,7 +18,28 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Exclude
+# Exclude from sitemap and processing
 exclude:
   - README.md
   - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+
+# SEO and Sitemap settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Sitemap plugin settings
+sitemap:
+  ignore:
+    - /404.html
+  changefreq: "monthly"
+  priority: 1.0
+
+# Enable Jekyll SEO tag optimization
+seo:
+  type: Person
