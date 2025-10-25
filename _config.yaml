@@ -1,3 +1,24 @@
-theme: jekyll-theme-minimal
-title: erral's homepage
-description: Where the fun begins!
+# Site settings
+title: Andre Serralheiro
+description: "serral's crapy page"
+author: Andre Serralheiro
+email: serralheiro [at] gmail (.) com
+
+# URLs
+baseurl: ""
+url: "https://serral.github.io"
+
+# Social
+linkedin_username: serralheiro
+github_username: serral
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude
+exclude:
+  - README.md
+  - LICENSE
