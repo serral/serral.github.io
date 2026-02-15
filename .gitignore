@@ -10,67 +10,13 @@ kubeconfig.yaml
 .idea/
 .vscode/
 
-# SSH Keys (ArgoCD deploy keys)
-.github/argocd_deploy_key*
-*_deploy_key
-*_deploy_key.pub
-*.pem
-*.key
-
-# Sealed-Secrets
-.secrets/
-
-# Terraform
-**/*.tfstate
-**/*.tfstate.backup
-.terraform/
-.terraform.lock.hcl
-
-# Temporary working directory
-.TEMP/
-TEMP/
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-.coverage
-.pytest_cache/
-htmlcov/
-.venv/
-venv/
-
 # Editor-specific temporary files
-.opencode/node_modules/
-.opencode/bun.lock
-.opencode/package.json
-.opencode/.DS_Store
-.gemini/.cache/
+.opencode/
+.gemini/
 
 # API keys and sensitive config (never commit - if needed in future)
 .env
 .env.local
-
-# Archive from previous projects/improvements (but allow kubernetes/archive/)
-archive/
-!kubernetes/archive/
 
 # Prompts (working files)
 prompts/
