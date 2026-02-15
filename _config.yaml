@@ -25,6 +25,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .gitignore
+  - AGENTS.md
 
 # SEO and Sitemap settings
 defaults:

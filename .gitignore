@@ -13,7 +13,6 @@ kubeconfig.yaml
 # Editor-specific temporary files
 .opencode/
 .gemini/
-AGENTS.md
 
 # API keys and sensitive config (never commit - if needed in future)
 .env
