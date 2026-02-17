@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Andre Serralheiro - Personal Hub</title>
+  <meta name="description" content="Infrastructure & DevOps Professional. Contact and redirect links.">
+  <meta name="author" content="Andre Serralheiro">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://serral.github.io/">
+  <meta property="og:title" content="Andre Serralheiro - Personal Hub">
+  <meta property="og:description" content="Infrastructure & DevOps Professional. Contact and redirect links.">
+  
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://serral.github.io/">
+  <meta property="twitter:title" content="Andre Serralheiro - Personal Hub">
+  <meta property="twitter:description" content="Infrastructure & DevOps Professional. Contact and redirect links.">
+  
+  <link rel="canonical" href="https://serral.github.io/">
+  
+  <style>
+    /* Retro 90s/Early 2000s Style */
+    
+    /* ASCII Art - Fixed top-left corner */
+    .ascii-art {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    .ascii-art pre {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 9px;
+      line-height: 1;
+      margin: 33.6px 0 0 23.52px;
+      padding: 0;
+      color: #000;
+      white-space: pre;
+      background-color: #fff;
+      display: inline-block;
+    }
+    
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #c0c0c0;
+      color: #000;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.4;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #c0c0c0;
+    }
+    
+    header {
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+      color: #000;
+    }
+    
+    .subtitle {
+      font-size: 1.1em;
+      margin: 5px 0 15px 0;
+    }
+    
+    hr {
+      border: none;
+      border-top: 2px solid #808080;
+      border-bottom: 1px solid #fff;
+      margin: 20px 0;
+    }
+    
+    h2 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: underline;
+      margin: 25px 0 15px 0;
+      color: #000;
+    }
+    
+    .toc {
+      margin: 15px 0;
+    }
+    
+    .toc ul {
+      list-style-type: disc;
+      margin: 10px 0 10px 30px;
+      padding: 0;
+    }
+    
+    .toc li {
+      margin: 5px 0;
+    }
+    
+    .links {
+      margin: 15px 0;
+    }
+    
+    .links ul {
+      list-style-type: disc;
+      margin: 10px 0 10px 30px;
+      padding: 0;
+    }
+    
+    .links li {
+      margin: 5px 0;
+    }
+    
+    .link-item {
+      color: #0000ff;
+      text-decoration: underline;
+      font-size: 1em;
+    }
+    
+    .link-item:hover {
+      color: #ff0000;
+    }
+    
+    .link-item:visited {
+      color: #800080;
+    }
+    
+    .info-section {
+      margin: 20px 0;
+    }
+    
+    .info-section h3 {
+      font-size: 1em;
+      font-weight: normal;
+      margin: 10px 0 5px 0;
+    }
+    
+    .info-section p {
+      margin: 5px 0;
+    }
+    
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 2px solid #808080;
+      font-size: 0.9em;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 5px 0;
+    }
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      
+      h1 {
+        font-size: 1.5em;
+      }
+      
+      .links ul {
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ascii-art">
+    <pre>.......... .....++:::..........::-----------:-----:::::::.......                               .:+*=
+................++:-:...... ....:-================+===----:.....         ...                    :=*+
+................++:-:........::-===+++++++++++++++++*+++===-::................... ..............:=**
+...............:++:-::..:::::-=+++++++++++++++**********++++=-::....................::.:::......:-**
+...............:*=:--:::----==++++++***********+++++++++++++++=-::.............::::.:::::::::::::-**
+...............-+=:==:--=====++++*******++++++==============+++=-:.............::::::::::--::::::-**
+...............-+=:-+===++++*******+++++=========----------:--===-............::::::::::::-:.::::-**
+.:.............=+=:-:=+++*******++++===========--------------:::-==--:................::::::.:.::-**
+.::............=+-:::=++*****++++==========-------------------::.::+++=::::.....:.......:::::::-:-+*
+...............-=--===+++*+++++==========----------------------:::::***+=++==:.:::::::::::::....::=*
+-:::..........:-=--=+****----========-----------------------------::-*##*+**==::-----====+++++++++**
+-----:::------:-==+**##*-:::--=======--------------------------------=###*+++====+******************
+=======++*****==++*####=:::--=======----------------------------------+*##*+=+=-----------=------=*#
+*+=+********#+++**####+-:---=======-----------------------------------=+###*+-=::..:...:.:::::::::+#
+--::::=+***+=--+**###*=----==========---------------------------------==+###*+:-:........:::....::=#
+.:::::::::-=+==+*####+----==================--==-----------------------==*###*=-::.....:::--:.:.::=#
+::...:.....-#+=+*###*=---=================++++++=+++++++===========-----=+*###*=::::::::.::-:...::=*
+--======-::=#*++*###*=---=====+++******#########+############***++++===--=*##*+-::.......:-::::.::=+
+=======---:+#**+*###*=--==+*####################=####################**+=+**##+:::.:.....:--:----:=+
+-=-::::::::+#*#*+*#*+=**#######################*+#*############-:-###==***#*+*=::::.::::::-::.::::==
+------:::::+#*##=+**#***#######################*-#****#########**+###*+*#*###**-:::----------:-::-==
+-::::::::::*#*#*=+###***#######################*-####**#*+=+=---++=---=#######*-+-.........--::..-==
+:::::::::::*#***=+###++*****##############*+**++==+*####*==+--=++=-::--+***###+-==+:......----:::--=
+.......::.:**+**=+*#*++*+*****###########*=*+*===-=*+###+---=++++++::--+***###*-=++*-::::----------=
+:......::.:**+**==+**++++***####==*+*###*=#+#+===--=**##-:==+++++==:--+****##*+-++==:::::----:..:--+
+:....::::::#*+*#===**=+++**###*###**####-*+#*++===-=+**#++==++++==::-=**+++*#*+=++=----------::::::+
+:::.::::::-##*+==-=**==+++**********###*-*#*+++======+**++=-====--::=**+++++*++=======-:::---------=
+:...::----=####*=-+*+===+++*********###*+#*+++++======+**=-=====:::=*++++++++====------.....:------=
+:::-::::::=#####++-=+===+=+++****+**###***++++++=======+++=+===-::=++++======--=:.:::::::..::::::::=
+..:-::::-:=#*###++--+---==+++++***********+++++++=========++=+=-=====------=+:--:::-:::::::::::::::=
+:::..:-::-=#*###++:-+=---===+++++++*****+++++++========--============------=*=:.:..:...==++=+++++***
+:.:::.::::+#*###++::*+-====++++++++++*++***+++==========--===========-----==*=:....:::.:::-==+++++++
+-:::::----+#+##*++:-*+-====++++++++++++**+++=============---========------==*-....:..:..:=*#++++++++
+...:..:--:*#+##*++::**=============++++**++====-=------=========-----------=*=--::=..-.-=+*++++++++*
+.......:--*#=##+++:.+*+=======+=====+++++=====----------=======--------=--==*=-:::-::::-+++=++++****
+........--*#+##+==::=*++===========+++++**#***=------=+*+=======---------===+:.:........:---:+++++++
+.......:--#*+##===--=*+++=====+==++****#######*=-==+**###**++====-------===++=:----......:::-=*+****
+.......:-:#**##===-::***++======***########%###############*****+==-----=+++*=:----.  .....::::::-==
+.....:::--#**##=+=-.:****++===+*################%%%%############**+=---==+*++-.-::=.. ......::::::::
+..:..:::-+#**##-+-:.-*##***+==*##################%%###############*+=-==++*++:.:-.=......:::::::::-:
+::::-::===#**##-+::--*####**++*#############**++******#********####*===++**+=...=.-:   .::::::::.:::
+*+=*++++==#+*##-+-===+*###***+*###****+++++=================++++****+=+***++:...:..:....:::-::::--::
+-:-**=-=:=#+*#*-+--====*####***##**************++++++++=+++======+++==+***+-............:::-:::-*+++
+-:=*+::::=#=*#*-+-===+*######***##**++++++++===========-----=--===+==+****=.............::--:::+###+
+=-+*+:::.=#=##*-+-==+#%###########**+++++++++++*++++==----------=+++=****+:.        .....---::-+###*
+-:+*=:::.+#=##+-===*%%%#%##########*++++++****####*#*+===------==*****##*-..        .....--:::-+*#*=
+::+*::::.+#=##+-==#%###%%%%%%%#%###***++++++*#######**+=------=+++*#####*=-...  .........--:::-=*#=-
+.:+=::::.**=##+-*#%%%%%%%%%*%%%%%###**+++++*#######**++==--===++*#######=+==.. ..........--:::-=*#*-
+..:::::::**=#*+*%%%%%%%%%%*=#%%%%%%##***************++++====++*#######***-+++:...........-:--:-=*#**
+::-:.....*++*+#%%%%%%%%%%%+=**#%%%%%%####****++*****+++**+++***######*=**+:+*+-::::......-=-=-+-++*+
+.::.....:+++*%%%%%%%%#%%%%==****#%%%%%#####*********+*+*****#####%%#+==##*-.+#**+:::.::..:--===-+*#=
+.::::::-+++*%%%%%%%%#%%%%#==***++##%%%#######*********++*######%##*=--=##*=.:*****-::::::...::-=*#*-
+.:-:.-++++*%%%%%%%#%%%%%%#=-***++++#%%%%%########*##****######%#+==--=+#%#+..-#**#*==::-::.........-
+.:::+++**#%%%%%%%#%%%%%%%#+-+***++++*#%%%%##################%%*=======+#%#*-::*#**#*++=-:::.........
+.:-=+++*#%%%%%%%####%%%%%#+=-#**++++++*#%%%################**+=--====+*#%%*+-:-##*#########**+==-:..
+</pre>
+  </div>
+  <main>
+    <div class="container">
+      <header>
+        <h1>Andre Serralheiro</h1>
+        <p class="subtitle">Infrastructure &amp; DevOps Professional</p>
+      </header>
+
+      <hr>
+
+      <section class="toc">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#about" class="link-item">About Me</a></li>
+          <li><a href="#links" class="link-item">Quick Links</a></li>
+          <li><a href="#contact" class="link-item">Contact Information</a></li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="about" class="info-section">
+        <h2>About Me</h2>
+        <h3>Job Title</h3>
+        <p>all-rounded pro</p>
+        
+        <h3>Key Responsibilities</h3>
+        <p>Infrastructure management, DevOps practices, cloud architecture, and automation.</p>
+      </section>
+
+      <hr>
+
+      <section id="links" class="info-section">
+        <h2>Quick Links</h2>
+        <div class="links">
+          <ul>
+            <li><a href="http://serralheiro.uk" class="link-item" target="_blank" rel="noopener noreferrer">serralheiro.uk</a> - Personal website</li>
+            <li><a href="http://queima.com" class="link-item" target="_blank" rel="noopener noreferrer">queima.com</a> - Projects</li>
+            <li><a href="https://linkedin.com/in/serralheiro" class="link-item" target="_blank" rel="noopener noreferrer">LinkedIn</a> - Professional profile</li>
+            <li><a href="https://github.com/serral" class="link-item" target="_blank" rel="noopener noreferrer">GitHub</a> - Code repositories</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="contact" class="info-section">
+        <h2>Contact Information</h2>
+        <h3>Email</h3>
+        <p>serralheiro [at] gmail (.) com</p>
+        
+        <h3>Location</h3>
+        <p>Based in the UK</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Andre Serralheiro. All rights reserved.</p>
+      <p>Last updated: February 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
