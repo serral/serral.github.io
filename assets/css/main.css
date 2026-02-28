@@ -7,13 +7,14 @@
   right: 0;
   z-index: -1;
   pointer-events: none;
+  overflow: visible;
 }
 
 .ascii-art pre {
   font-family: "Courier New", Courier, monospace;
   font-size: 9px;
   line-height: 1;
-  margin: 20px 20px 0 0;
+  margin: 20px 0 0 0;
   padding: 0;
   color: #000;
   white-space: pre;
@@ -33,7 +34,7 @@ body {
 /* Container */
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 0 0 20px;
   background-color: #c0c0c0;
 }
 
