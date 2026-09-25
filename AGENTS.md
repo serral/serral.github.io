@@ -80,7 +80,7 @@ sitemap:
 - 2-space indentation
 - Use Liquid tags for dynamic content: `{{ variable }}`, `{% if %}`
 - Prefer `relative_url` filter for internal links
-- Include SEO meta tags in `<head>`
+- `<head>` meta tags come from `{% seo title=false %}`; the layout writes `<title>` itself (homepage: site name only, other pages: `Page | Site`)
 
 ### CSS
 - Use CSS variables in `:root` for colors
@@ -98,7 +98,8 @@ sitemap:
 - External links: always use `target="_blank" rel="noopener noreferrer"`
 - Include structured data (JSON-LD) for Person schema
 - All pages should have unique title and description
-- Use `{% seo %}` tag from jekyll-seo-tag plugin
+- Use the `{% seo %}` tag from jekyll-seo-tag (with `title=false`); do not hand-write description, Open Graph, Twitter or canonical tags, they would duplicate its output
+- The homepage `description` in `index.html` must match `description` in `_config.yaml`
 
 ## Dependencies
 
