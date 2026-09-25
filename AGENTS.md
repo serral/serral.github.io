@@ -1,6 +1,22 @@
 # Agent Instructions for serral.github.io
 
-This is a Jekyll-based personal GitHub Pages site.
+This is a Jekyll-based personal GitHub Pages site, served at https://www.serralheiro.uk.
+
+## Hosting & Domains
+
+GitHub Pages is the only host. Deploying = pushing to `master` (GitHub builds Jekyll).
+
+| Name | How it is served |
+|------|------------------|
+| `www.serralheiro.uk` | Canonical site. GitHub Pages custom domain (`CNAME` file), Cloudflare DNS-only CNAME to `serral.github.io`, domain verified, HTTPS enforced |
+| `serral.github.io` | GitHub 301 to `https://www.serralheiro.uk/` |
+| `queima.com`, `www.queima.com` | Cloudflare proxied + Redirect Rule, 301 to `https://www.serralheiro.uk` keeping path and query (zone SSL: Full strict) |
+| `dove.queima.com` | Server (Contabo), nginx; DNS-only on purpose (SSH, certbot). `/` 301s to the site, nothing else served |
+| `serralheiro.uk` (apex) | Intentionally not pointed at GitHub Pages (Pages shows a harmless alt-domain warning) |
+
+- Do not edit or delete `CNAME`; it binds the custom domain
+- `url` in `_config.yaml` must stay `https://www.serralheiro.uk` (canonical, og:url, sitemap, robots.txt)
+- Never copy the built site to dove or any other server; there is one source of truth
 
 ## Build Commands
 
@@ -18,10 +34,12 @@ bundle exec jekyll serve --livereload
 bundle exec jekyll clean
 ```
 
+Note: the macOS system Ruby (2.6) lacks bundler 2.7.1 from `Gemfile.lock`, so these commands need a newer Ruby (e.g. Homebrew or rbenv) to run locally.
+
 ## Testing
 
 This is a static Jekyll site with no test framework. Verify changes by:
-1. Running `bundle exec jekyll serve` and checking localhost:4000
+1. Running `bundle exec jekyll serve` and checking localhost:4000 (or, after pushing, the live site once the Pages build finishes: `gh api repos/serral/serral.github.io/pages/builds/latest`)
 2. Validating HTML output with browser dev tools
 3. Checking YAML front matter syntax in `_config.yaml`
 
@@ -30,8 +48,10 @@ This is a static Jekyll site with no test framework. Verify changes by:
 ```
 /
 ├── _config.yaml      # Jekyll site configuration
+├── _includes/        # ascii-art.txt (portrait shown beside content)
 ├── _layouts/         # HTML layouts (default.html)
 ├── assets/css/       # Stylesheets (main.css)
+├── CNAME             # GitHub Pages custom domain (www.serralheiro.uk)
 ├── index.html        # Main page with YAML front matter
 ├── 404.html          # Error page
 ├── Gemfile           # Ruby dependencies
@@ -92,3 +112,4 @@ sitemap:
 - Commit message: concise, describe the change
 - Never commit: `_site/`, `.jekyll-cache/`, secrets, `.env`
 - Test locally before pushing to trigger GitHub Pages build
+- Pushing to `master` publishes to https://www.serralheiro.uk
