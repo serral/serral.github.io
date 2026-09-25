@@ -152,6 +152,12 @@ footer p {
   margin: 5px 0;
 }
 
+/* Span the full width so the text centres under the whole page, not the content column */
+footer .container {
+  max-width: none;
+  margin: 0;
+}
+
 /* Responsive */
 @media (max-width: 700px) {
   .page {
