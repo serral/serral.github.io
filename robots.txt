@@ -5,4 +5,4 @@ Disallow: /_site/
 Disallow: /.jekyll-cache/
 Disallow: /.sass-cache/
 
-Sitemap: https://serral.github.io/sitemap.xml
+Sitemap: https://www.serralheiro.uk/sitemap.xml
