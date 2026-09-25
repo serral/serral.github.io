@@ -51,6 +51,7 @@ This is a static Jekyll site with no test framework. Verify changes by:
 ├── _includes/        # ascii-art.txt (portrait shown beside content)
 ├── _layouts/         # HTML layouts (default.html)
 ├── assets/css/       # Stylesheets (main.css)
+├── apple-touch-icon.png  # 180px home-screen icon (same crop as favicon.ico)
 ├── CNAME             # GitHub Pages custom domain (www.serralheiro.uk)
 ├── index.html        # Main page with YAML front matter
 ├── 404.html          # Error page
