@@ -26,8 +26,11 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   
-  <!-- Title, description, canonical, Open Graph and Twitter tags -->
-  {% seo %}
+  <!-- Page title, then "Page | Site" elsewhere (the plugin would append the site description on the homepage) -->
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <!-- Description, canonical, Open Graph and Twitter tags -->
+  {% seo title=false %}
 </head>
 <body>
   <div class="page">
