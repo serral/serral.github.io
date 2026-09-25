@@ -1,25 +1,31 @@
 /* Retro 90s/Early 2000s Style */
 
-/* ASCII Art - Fixed right side */
+/* Page grid: content on the left, ASCII art on the right */
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 800px) auto;
+  column-gap: clamp(24px, 4vw, 64px);
+  align-items: start;
+}
+
+/* ASCII Art - scales with the viewport (the art is 100 chars x 55 lines,
+   Courier is 0.6em wide, so the block is 60em wide and 55em tall) */
 .ascii-art {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  pointer-events: none;
-  overflow: visible;
+  position: sticky;
+  top: 20px;
+  justify-self: start;
 }
 
 .ascii-art pre {
   font-family: "Courier New", Courier, monospace;
-  font-size: 9px;
+  font-size: clamp(4px, min(0.62vw, calc((100vh - 52px) / 55)), 12px);
   line-height: 1;
-  margin: 20px 0 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 6px;
   color: #000;
   white-space: pre;
   background-color: #fff;
-  display: inline-block;
+  overflow: hidden;
 }
 
 body {
@@ -147,11 +153,31 @@ footer p {
 }
 
 /* Responsive */
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 20px;
+  }
+
+  .ascii-art {
+    position: static;
+  }
+
+  /* Full width: viewport minus body padding (2 x 20px) and pre padding (2 x 6px) */
+  .ascii-art pre {
+    font-size: calc((100vw - 52px) / 60);
+  }
+}
+
 @media (max-width: 600px) {
   body {
     padding: 10px;
   }
-  
+
+  .ascii-art pre {
+    font-size: calc((100vw - 32px) / 60);
+  }
+
   h1 {
     font-size: 1.5em;
   }

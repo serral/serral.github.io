@@ -50,11 +50,14 @@
   {% seo %}
 </head>
 <body>
-  <div class="ascii-art">
-    <pre>{% include ascii-art.txt %}</pre>
+  <div class="page">
+    {{ content }}
+
+    <aside class="ascii-art" aria-hidden="true">
+      <pre>{% include ascii-art.txt %}</pre>
+    </aside>
   </div>
-  {{ content }}
-  
+
   <footer>
     <div class="container">
       <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
