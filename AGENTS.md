@@ -4,7 +4,7 @@ This is a Jekyll-based personal GitHub Pages site, served at https://www.serralh
 
 ## Hosting & Domains
 
-GitHub Pages is the only host. Deploying = pushing to `master` (GitHub builds Jekyll).
+GitHub Pages is the only host. Deploying = pushing to `main` (GitHub builds Jekyll).
 
 | Name | How it is served |
 |------|------------------|
@@ -114,4 +114,4 @@ sitemap:
 - Commit message: concise, describe the change
 - Never commit: `_site/`, `.jekyll-cache/`, secrets, `.env`
 - Test locally before pushing to trigger GitHub Pages build
-- Pushing to `master` publishes to https://www.serralheiro.uk
+- Pushing to `main` publishes to https://www.serralheiro.uk

@@ -12,7 +12,7 @@ Outside work I've been exploring everything there is with AI, usually by buildin
 This repo is the source for my personal landing page: a short intro, links and contact details.
 
 ## Hosting
-- Built with Jekyll and hosted on GitHub Pages; pushing to `master` publishes the site
+- Built with Jekyll and hosted on GitHub Pages; pushing to `main` publishes the site
 - Custom domain `www.serralheiro.uk` (set by the `CNAME` file), HTTPS enforced
 - `serral.github.io`, `queima.com` and `www.queima.com` redirect (301) to `https://www.serralheiro.uk`
 
